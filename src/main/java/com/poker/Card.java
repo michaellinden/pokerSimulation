@@ -1,4 +1,4 @@
-package com.example;
+package com.poker;
 
 public class Card {
     final private Suit suit;
@@ -8,5 +8,10 @@ public class Card {
     Card(Suit suit, CardValue value) {
         this.suit = suit;
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return value.toString() + suit.toString();
     }
 }

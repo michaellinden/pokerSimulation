@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\pokerSimulationGradle-1.0-SNAPSHOT.jar
 
 
 @rem Execute pokerSimulationGradle
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %POKER_SIMULATION_GRADLE_OPTS%  -classpath "%CLASSPATH%" com.example.Main %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %POKER_SIMULATION_GRADLE_OPTS%  -classpath "%CLASSPATH%" com.poker.Main %*
 
 :end
 @rem End local scope for the variables with windows NT shell
