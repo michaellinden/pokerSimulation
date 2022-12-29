@@ -1,4 +1,7 @@
-package com.poker;
+package com.poker.game;
+
+import com.poker.cards.Card;
+import com.poker.cards.Deck;
 
 import java.util.ArrayList;
 import java.util.List;

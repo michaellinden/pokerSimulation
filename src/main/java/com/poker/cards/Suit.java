@@ -1,4 +1,4 @@
-package com.poker;
+package com.poker.cards;
 
 public enum Suit {
      SPADES(0x2660),

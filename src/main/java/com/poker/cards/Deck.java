@@ -1,4 +1,4 @@
-package com.poker;
+package com.poker.cards;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -11,20 +11,20 @@ public class Deck {
         this.cards = cards;
     }
 
-    Card draw() {
+    public Card draw() {
         if (cards.size() == 0) {
             throw new RuntimeException("No cards left in deck!");
         }
         return cards.poll();
     }
 
-    void shuffle() {
+    public void shuffle() {
         List<Card> arrayCards = cards.stream().collect(Collectors.toList());
         Collections.shuffle(arrayCards);
         cards = new ArrayDeque<Card>(arrayCards);
     }
 
-    static Deck constructDeck() {
+    public static Deck constructDeck() {
         Queue<Card> cards = new ArrayDeque<>();
         for (Suit suit : Suit.values()) {
             for (CardValue cardValue : CardValue.values()) {
